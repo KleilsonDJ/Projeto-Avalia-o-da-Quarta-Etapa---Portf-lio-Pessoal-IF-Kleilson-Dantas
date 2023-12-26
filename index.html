@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>index</title>
+</head>
+
+<body>
+
+    <div class="background">
+        <header>
+            <!--Logo-->
+            <div class="logo">
+                <a href="index.html"><i href="index.html" class="fa-sharp fa-light fa-k"></i></a>
+            </div>
+            <!--cabeçalho-link-->
+            <div class="cabeçalho-link">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="ifrn.html">IFRN</a>
+                </li>
+                <!--Barra de Pesquisa-->
+                <form action="#" method="post" onsubmit="pesquisarERedirecionarCabecario();">
+
+                    <input type="text" name="search" id="search" class="Pesquisa" placeholder="Faça Sua busca" required>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </header>
+
+        <!--container-texto e informações de contato-->
+        <div class="container-text">
+            <!--texto de Apresentação-->s
+            <div class="text">
+                <h3>Ola, Pessoal!</h3>
+                <h1>Eu sou <span>KLEILSON DANTAS</span></h1>
+                <p>
+                     Olá, sou um dedicado estudante do IFRN Campus Lajes, com habilidades destacadas
+                    <br>em programação. Além de minha sólida expertise nessa área, destaco-me por uma 
+                    <br>excelente capacidade de trabalho em equipe. Meu espírito de liderança, muitas vezes 
+                    <br>assumido de maneira inconsciente, fortalece ainda mais minha contribuição ao grupo.
+                    <br><br>
+                    Perfeccionista por natureza, busco constantemente aprimorar meus trabalhos, assegurando que cada entrega 
+                    <br>seja não apenas pontual, mas também mantendo elevados padrões de qualidade. Adiantar-me nas atividades 
+                    <br>é uma prática constante, proporcionando não apenas tranquilidade em relação aos prazos, mas também permitindo 
+                    <br>dedicar tempo extra à garantia da excelência em cada projeto.</p>
+                <!--texto de redes-social-->
+                <div class="redes-social">
+                    <a href="https://www.instagram.com/keilson_dantasxjr?igshid=ODA1NTc5OTg5Nw=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/infortechs?igshid=ODA1NTc5OTg5Nw=="><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/ifrn_lajes?igshid=ODA1NTc5OTg5Nw=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/semadec.iflaj?igshid=ODA1NTc5OTg5Nw=="><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/ifrnoficial?igshid=ODA1NTc5OTg5Nw=="><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <!--Botão de redirecionamento de pagina-->
+                <button class="btn" onclick="redirecionarParaIFRN()">IFRN</button>
+            </div>
+        </div>
+        <br><br><br><br><br>
+        <br><br><br>
+        <br><br><br><br>
+
+        <!--Lista dos Projetos do Ano-->
+        <div class="lista-projetos">
+            <h2>Conquistas Anuais na Disciplina de Autoria Web</h2>
+
+            <!-- Caixa que conten as informações do projeto-->
+            <div class="lista-projetos-sub">
+
+                <div class="lista-projetos-sub2">
+                    <div class="lista-projetos-sub2-Imagen">
+                        <img src="Galeria/Imagen_Projeto 1.png" alt="Imagen_Projeto 1">
+                    </div>
+                
+                    <div class="lista-projetos-sub2-text">
+                        <h3>Hospital Vida- IF</h3>
+                        <br>
+                        <!--Textos,Link referente ao projeto-->
+                        <button id="botaoRevelar1" onclick="toggleTexto('paragrafo1', 'lista1', 'botaoRevelar1', 'botaoOcultar1')">
+                            Revelar
+                            <i class="fa-thin fa-arrow-down-to-line"></i>
+                        </button>
+                        
+                        <p id="paragrafo1" class="hidden" color="">Hospital Vida-IF, seu centro online para agendamento médico e informações de saúde. Agende consultas e exames de forma rápida, conheça nossa equipe dedicada, explore recursos informativos e confie em nossa abordagem tecnológica e compassiva. Estamos comprometidos com sua saúde. Agende hoje e deixe-nos cuidar de você.
+
+                        </p>
+                        <li id="lista1" class="hidden"><a href="https://drive.google.com/drive/folders/1ccya1pgsWewkaeD77DFwHvQrEa9dUoh6?usp=sharing">https://www.pastaDrive.Hospital Vida- IF.com/</a></li>
+                        <br>
+                        <button id="botaoOcultar1" class="hidden" onclick="toggleTexto('paragrafo1', 'lista1', 'botaoRevelar1', 'botaoOcultar1')">
+                            Ocultar
+                            <i class="fa-thin fa-arrow-down-to-line"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Caixa que conten as informações do projeto-->
+                <div class="lista-projetos-sub2">
+                    <div class="lista-projetos-sub2-Imagen">
+                        <img src="Galeria/Imagen_Projeto 2.png" alt="Imagen_Projeto 2">
+                    </div>
+                    <div class="lista-projetos-sub2-text">
+                        <h3>Eu E Cinema</h3>
+                        <br>
+                        <!--Textos,Link referente ao projeto-->
+                        <button id="botaoRevelar2" onclick="toggleTexto('paragrafo2', 'lista2', 'botaoRevelar2', 'botaoOcultar2')">
+                            Revelar
+                            <i class="fa-thin fa-arrow-down-to-line"></i>
+                        </button>
+                        
+                        <p id="paragrafo2" class="hidden" color=""> Eu E Cinema, seu destino online para dicas e novidades cinematográficas. Explore recomendações selecionadas, fique atualizado sobre os últimos lançamentos e compre ingressos em nosso site. Apaixonados por cinema, queremos compartilhar essa paixão, proporcionando uma experiência envolvente e conveniente. Junte-se a nós para transformar suas idas ao cinema em momentos inesquecíveis!</p>
+                        <li id="lista2" class="hidden"><a href="https://drive.google.com/drive/folders/1LJ5kp5Yjb43RyfUFUrm5_at1rLjJ1vpT?usp=sharing">https://www.pastaDrive.Eu E Cinema.com/</a></li>
+                        <br>
+                        <button id="botaoOcultar2" class="hidden" onclick="toggleTexto('paragrafo2', 'lista2', 'botaoRevelar2', 'botaoOcultar2')">
+                            Ocultar
+                            <i class="fa-thin fa-arrow-down-to-line"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Caixa que conten as informações do projeto-->
+                <div class="lista-projetos-sub2">
+                    <div class="lista-projetos-sub2-Imagen">
+                        <img src="Galeria/Imagen_Projeto 3.png" alt="Imagen_Projeto 3">
+                    </div>
+                    
+
+                    <div class="lista-projetos-sub2-text">
+                        <h3>Telemedicina Acompanhamento</h3>
+                        <br>
+                        <!--Textos,Link referente ao projeto-->
+                        <button id="botaoRevelar3" onclick="toggleTexto('paragrafo3', 'lista3', 'botaoRevelar3', 'botaoOcultar3')">
+                            Revelar
+                            <i class="fa-thin fa-arrow-down-to-line"></i>
+                        </button>
+                        
+                        <p id="paragrafo3" class="hidden" color="">Site de assistência e portal de saúde, incorporando serviços de telemedicina e acompanhamento para promover o bem-estar. Essa iniciativa faz parte da avaliação do terceiro bimestre, visando inovação na área da saúde e oferecendo uma experiência abrangente aos usuários</p>
+                        <li id="lista3" class="hidden"><a href="https://drive.google.com/drive/folders/1RkLn6bCZLirFN4pdto_QI0bxsR1XsMQe?usp=sharing">https://www.pastaDrive.Telemedicina Acompanhamento.com/</a></li>
+                        <br>
+                        <button id="botaoOcultar3" class="hidden" onclick="toggleTexto('paragrafo3', 'lista3', 'botaoRevelar3', 'botaoOcultar3')">
+                            Ocultar
+                            <i class="fa-thin fa-arrow-down-to-line"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+    <footer>
+        <p>Portifolio-2023</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+        
+   
+</body>
+
+</html>
